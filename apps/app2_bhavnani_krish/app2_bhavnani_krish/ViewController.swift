@@ -60,6 +60,7 @@ class ViewController: UIViewController {
                         }
                         shade([0,1,2], "yellow")
                         active = false
+                        statusLabel.textColor = UIColor.green
                     case "midRow":
                         if !turn {
                             statusLabel.text = "Player 1 wins"
@@ -72,6 +73,7 @@ class ViewController: UIViewController {
                         }
                         shade([3,4,5], "yellow")
                         active = false
+                        statusLabel.textColor = UIColor.green
                     case "botRow":
                         if !turn {
                             statusLabel.text = "Player 1 wins"
@@ -84,6 +86,7 @@ class ViewController: UIViewController {
                         }
                         shade([6,7,8], "yellow")
                         active = false
+                        statusLabel.textColor = UIColor.green
                     case "rightCol":
                         if !turn {
                             statusLabel.text = "Player 1 wins"
@@ -96,6 +99,7 @@ class ViewController: UIViewController {
                         }
                         shade([0,3,6], "yellow")
                         active = false
+                        statusLabel.textColor = UIColor.green
                     case "midCol":
                         if !turn {
                             statusLabel.text = "Player 1 wins"
@@ -108,6 +112,7 @@ class ViewController: UIViewController {
                         }
                         shade([1, 4, 7], "yellow")
                         active = false
+                        statusLabel.textColor = UIColor.green
                     case "leftCol":
                         if !turn {
                             statusLabel.text = "Player 1 wins"
@@ -120,6 +125,7 @@ class ViewController: UIViewController {
                         }
                         shade([2, 5, 8], "yellow")
                         active = false
+                        statusLabel.textColor = UIColor.green
                     case "negDiag":
                         if !turn {
                             statusLabel.text = "Player 1 wins"
@@ -132,6 +138,7 @@ class ViewController: UIViewController {
                         }
                         shade([0,4,8], "yellow")
                         active = false
+                        statusLabel.textColor = UIColor.green
                     case "posDiag":
                         if !turn {
                             statusLabel.text = "Player 1 wins"
@@ -144,6 +151,7 @@ class ViewController: UIViewController {
                         }
                         shade([2,4,6], "yellow")
                         active = false
+                        statusLabel.textColor = UIColor.green
                     default:
                         
                         if turn {
@@ -169,6 +177,7 @@ class ViewController: UIViewController {
         }
         resetBoard()
         statusLabel.text = "Player 1's Turn"
+        statusLabel.textColor = UIColor.black
         turn = true
         active = true
     }
