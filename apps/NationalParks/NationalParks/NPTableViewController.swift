@@ -78,7 +78,6 @@ class NPTableViewController: UITableViewController {
             label.text = parks[indexPath.row].designation
         }
         if var label = cell.viewWithTag(1) as? UIImageView {
-            dump(parks[indexPath.row])
             if (parks[indexPath.row].images.count != 0) {
                 label.kf.setImage(with : parks[indexPath.row].images[0].url)
             } else {
